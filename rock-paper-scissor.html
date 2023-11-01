@@ -1,0 +1,74 @@
+<!--
+  1. When we click computer randomly select a move
+  2. Compare the moves to  get the result
+  3. update the score(added)
+  4. Display the result in popup-->
+<!-- include 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./rock-paper-scissor.css" />
+  </head>
+  <body>
+    <h1 class="title">Rock Paper Scissor</h1>
+    <!-- get 0 and 1 with the help of Math.random() -->
+    <!-- 1/3 = rock, between 1/3 and 2/3 = paper, between 2/3 and 1 = scissor -->
+
+    <div class="moves-btn">
+      <button
+        class="moves"
+        onclick="
+                 
+           playGame('rock');
+           "
+      >
+        <img src="img/rock-emoji.png" alt="" class="img" />
+      </button>
+
+      <button
+        class="moves"
+        onclick="
+         
+         playGame('paper');
+         "
+      >
+        <img src="img/paper-emoji.png" alt="" class="img" />
+      </button>
+
+      <button
+        class="moves"
+        onclick="
+         
+         playGame('scissor')
+           "
+      >
+        <img src="img/scissors-emoji.png" alt="" class="img" />
+      </button>
+    </div>
+
+    <div class="stats">
+      <p class="js-score"></p>
+      <p class="js-move"></p>
+      <p class="js-result p-result"></p>
+    </div>
+
+    <div>
+      <button
+        onclick=" (score.wins = 0), (score.ties = 0), (score.losses = 0);
+      localStorage.removeItem('score');
+      updateScoreElement();
+    "
+        class="reset-btn"
+      >
+        Reset score
+      </button>
+    </div>
+
+    <!-- js  -->
+    <script src="rock-paper-scissor.js"></script>
+  </body>
+</html>
