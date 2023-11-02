@@ -32,9 +32,31 @@ body {
   margin-top: 1rem;
   gap: 1rem;
 }
-.img {
+
+img {
   height: 80px;
   width: 80px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-move {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 20px;
+}
+
+.js-move img {
+  height: 120px;
+  width: 120px;
 }
 
 .reset-btn {

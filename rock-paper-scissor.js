@@ -75,9 +75,10 @@ function playGame(playerMove) {
   // diplay result in page
   document.querySelector(".js-result").innerHTML = result;
   //display moves in page
-  document.querySelector(
-    ".js-move"
-  ).innerHTML = `You picked ${playerMove}. Computer picked ${computerMove}.`;
+  document.querySelector(".js-move").innerHTML = `You
+  <img src="img/${playerMove}-emoji.png" alt="" />
+  <img src="img/${computerMove}-emoji.png" alt="" />
+  Comp`;
 
   // // show result popup
   // alert(
